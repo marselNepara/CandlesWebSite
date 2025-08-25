@@ -256,3 +256,208 @@ header{
 .why-we-item:hover > .why-we-item-block-img{
     border: 2px solid var(--light-yellow-color);
 }
+
+
+
+@media (max-width: 768px) {
+
+    /* Общее */
+    html, body {
+        font-size: 14px;
+    }
+
+    /* Шапка */
+    .header-inner {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .header-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 10px;
+        background-color: var(--dark-blue-color);
+        padding: 10px 0;
+        border-radius: 8px;
+    }
+
+    .header-nav.active {
+        display: flex;
+    }
+
+    .header-nav-item {
+        font-size: 18px;
+        padding: 8px 0;
+    }
+
+    /* Баннер */
+    .banner-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 10px 0;
+    }
+
+    .banner-title {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .banner-undertitle,
+    .banner-text {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .banner-img-block {
+        width: 280px;
+        height: 280px;
+    }
+
+    .banner-img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .banner-buttons {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .banner-btn-items,
+    .banner-btn-how-to-place-candle {
+        padding: 12px 30px;
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* Раздел "Что означает свеча?" */
+    .banner-candle-title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .banner-candle-undertitle {
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    /* Почему мы */
+    .why-we-title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .why-we-text {
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .why-we-items {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .why-we-item {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .why-we-item-title {
+        font-size: 18px;
+    }
+
+    .why-we-item-text {
+        font-size: 15px;
+    }
+
+    .why-we-item-block-img {
+        margin: 0 auto;
+    }
+
+    /* Продукты */
+    .products-title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    /* Футер */
+    .footer .container {
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+}
+
+/* --- Планшеты (769px — 1024px) --- */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .container {
+        padding: 0 30px;
+    }
+
+    .banner-title {
+        font-size: 48px;
+    }
+
+    .banner-undertitle {
+        font-size: 20px;
+    }
+
+    .banner-img-block, .banner-img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .why-we-items {
+        gap: 15px;
+    }
+
+    .why-we-item-text {
+        font-size: 15px;
+    }
+
+    .banner-buttons {
+        gap: 15px;
+    }
+
+    .banner-btn-items,
+    .banner-btn-how-to-place-candle {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+/* === Дополнительно: предотвращение переполнения === */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Убедимся, что текст не выходит за пределы */
+.banner-text,
+.banner-undertitle,
+.banner-candle-undertitle,
+.why-we-text {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}   
