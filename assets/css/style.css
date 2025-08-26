@@ -261,6 +261,7 @@ header{
 .products {
     display: flex;
     justify-content: center;
+    margin-bottom: 60px;
 }
 .products-inner {
     gap: 20px;
@@ -318,4 +319,74 @@ header{
     max-width: min-content;
 }
 
+.prayer {
+    background-image: url('../images/bg-prayer.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.line {
+    margin-bottom: 30px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--dark-red-color);
+}
+.prayer-inner {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.prayer-title {
+    font-family: var(--font-balkara);
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: var(--dark-red-color);
+}
+.prayer-text {
+    font-family: var(--font-balkara);
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: var(--dark-blue-color);
+}
 
+
+
+
+
+/* 💻 Маленькие десктопы и ноутбуки (до 1440px) */
+@media (max-width: 1440px) {
+
+}
+
+/* 💻 Стандартные ноутбуки (до 1200px) */
+@media (max-width: 1200px) {
+  /* Стили для средних экранов */
+}
+
+/* 🖥️ Планшеты в альбомной ориентации (до 1024px) */
+@media (max-width: 1024px) {
+    .banner-img-block{
+        display: none;
+    }
+}
+
+/* 📦 Планшеты в портретной ориентации (до 768px) */
+@media (max-width: 768px) {
+  /* Стили для мобильных в горизонтальной ориентации */
+}
+
+/* 📱 Мобильные устройства (до 480px) */
+@media (max-width: 480px) {
+  /* Стили для старых и маленьких смартфонов */
+}
+
+/* 📱 Очень маленькие экраны (до 360px) */
+@media (max-width: 360px) {
+  /* Стили для компактных телефонов */
+}
